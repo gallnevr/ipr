@@ -7,13 +7,14 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import static io.restassured.RestAssured.basePath;
 import static io.restassured.RestAssured.given;
 
 
 public class Before {
-    @BeforeMethod
+    @BeforeTest
     public void configureRestAssured() {
         RestAssured.basePath = "https://api.vk.com/method";
         RestAssured.requestSpecification = new RequestSpecBuilder()
