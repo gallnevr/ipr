@@ -16,7 +16,6 @@ public class EndPoints {
     public static final String isLiked = "/likes.isLiked";
     public static final String accountBan = "/account.ban";
     public static final String accountUnban = "/account.unban";
-    public static final String accountGetBanned = "/account.getBanned";
     public static final String faveAddPost = "/fave.addPost";
     public static final String faveGet = "/fave.get";
     public static final String faveRemovePost = "/fave.removePost";
